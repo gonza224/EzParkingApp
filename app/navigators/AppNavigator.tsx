@@ -17,7 +17,6 @@ import { useColorScheme } from "react-native"
 import * as Screens from "app/screens"
 import Config from "../config"
 import { useStores } from "../models"
-import { DemoNavigator, DemoTabParamList } from "./DemoNavigator"
 import { navigationRef, useBackButtonHandler } from "./navigationUtilities"
 import { colors } from "app/theme"
 
@@ -41,7 +40,6 @@ export type AppStackParamList = {
   map: undefined
   parkingLot: undefined
   parkingSpot: undefined
-  demo: NavigatorScreenParams<DemoTabParamList>
   // 🔥 Your screens go here
   // IGNITE_GENERATOR_ANCHOR_APP_STACK_PARAM_LIST
 }
@@ -80,7 +78,6 @@ const AppStack = observer(function AppStack() {
         <> */}
       <Stack.Screen name="home" component={Screens.Home} />
       <Stack.Screen name="search" component={Screens.SearchScreen} />
-      <Stack.Screen name="demo" component={DemoNavigator} />
       <Stack.Screen name="map" component={Screens.MapScreen} />
       <Stack.Screen name="parkingLot" component={Screens.ParkingLotScreen} />
       <Stack.Screen name="parkingSpot" component={Screens.ParkingSpotScreen} />
