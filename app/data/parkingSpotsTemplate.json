@@ -1,0 +1,13 @@
+{
+  "parkingLotTitle": "Lot XYZ",
+  "parkingSpots": [
+    {
+      "latitude": 1234,
+      "longitude": 1234
+    },
+    {
+      "latitude":
+      "longitude":
+    }
+  ]
+}
